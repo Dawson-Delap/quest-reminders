@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		7FF78A122D0B3D6E003E36FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FF789F92D0B3D6D003E36FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FF78A002D0B3D6D003E36FD;
+			remoteInfo = "Quest Reminders";
+		};
+		7FF78A1C2D0B3D6E003E36FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FF789F92D0B3D6D003E36FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FF78A002D0B3D6D003E36FD;
+			remoteInfo = "Quest Reminders";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7FF78A012D0B3D6D003E36FD /* Quest Reminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quest Reminders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF78A112D0B3D6E003E36FD /* Quest RemindersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quest RemindersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF78A1B2D0B3D6E003E36FD /* Quest RemindersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quest RemindersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7FF78A032D0B3D6D003E36FD /* Quest Reminders */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Quest Reminders";
+			sourceTree = "<group>";
+		};
+		7FF78A142D0B3D6E003E36FD /* Quest RemindersTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Quest RemindersTests";
+			sourceTree = "<group>";
+		};
+		7FF78A1E2D0B3D6E003E36FD /* Quest RemindersUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Quest RemindersUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FF789FE2D0B3D6D003E36FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF78A0E2D0B3D6E003E36FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF78A182D0B3D6E003E36FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FF789F82D0B3D6D003E36FD = {
+			isa = PBXGroup;
+			children = (
+				7FF78A032D0B3D6D003E36FD /* Quest Reminders */,
+				7FF78A142D0B3D6E003E36FD /* Quest RemindersTests */,
+				7FF78A1E2D0B3D6E003E36FD /* Quest RemindersUITests */,
+				7FF78A022D0B3D6D003E36FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FF78A022D0B3D6D003E36FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FF78A012D0B3D6D003E36FD /* Quest Reminders.app */,
+				7FF78A112D0B3D6E003E36FD /* Quest RemindersTests.xctest */,
+				7FF78A1B2D0B3D6E003E36FD /* Quest RemindersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FF78A002D0B3D6D003E36FD /* Quest Reminders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF78A252D0B3D6E003E36FD /* Build configuration list for PBXNativeTarget "Quest Reminders" */;
+			buildPhases = (
+				7FF789FD2D0B3D6D003E36FD /* Sources */,
+				7FF789FE2D0B3D6D003E36FD /* Frameworks */,
+				7FF789FF2D0B3D6D003E36FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7FF78A032D0B3D6D003E36FD /* Quest Reminders */,
+			);
+			name = "Quest Reminders";
+			packageProductDependencies = (
+			);
+			productName = "Quest Reminders";
+			productReference = 7FF78A012D0B3D6D003E36FD /* Quest Reminders.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FF78A102D0B3D6E003E36FD /* Quest RemindersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF78A282D0B3D6E003E36FD /* Build configuration list for PBXNativeTarget "Quest RemindersTests" */;
+			buildPhases = (
+				7FF78A0D2D0B3D6E003E36FD /* Sources */,
+				7FF78A0E2D0B3D6E003E36FD /* Frameworks */,
+				7FF78A0F2D0B3D6E003E36FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FF78A132D0B3D6E003E36FD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7FF78A142D0B3D6E003E36FD /* Quest RemindersTests */,
+			);
+			name = "Quest RemindersTests";
+			packageProductDependencies = (
+			);
+			productName = "Quest RemindersTests";
+			productReference = 7FF78A112D0B3D6E003E36FD /* Quest RemindersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7FF78A1A2D0B3D6E003E36FD /* Quest RemindersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF78A2B2D0B3D6E003E36FD /* Build configuration list for PBXNativeTarget "Quest RemindersUITests" */;
+			buildPhases = (
+				7FF78A172D0B3D6E003E36FD /* Sources */,
+				7FF78A182D0B3D6E003E36FD /* Frameworks */,
+				7FF78A192D0B3D6E003E36FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FF78A1D2D0B3D6E003E36FD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7FF78A1E2D0B3D6E003E36FD /* Quest RemindersUITests */,
+			);
+			name = "Quest RemindersUITests";
+			packageProductDependencies = (
+			);
+			productName = "Quest RemindersUITests";
+			productReference = 7FF78A1B2D0B3D6E003E36FD /* Quest RemindersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FF789F92D0B3D6D003E36FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					7FF78A002D0B3D6D003E36FD = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					7FF78A102D0B3D6E003E36FD = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 7FF78A002D0B3D6D003E36FD;
+					};
+					7FF78A1A2D0B3D6E003E36FD = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 7FF78A002D0B3D6D003E36FD;
+					};
+				};
+			};
+			buildConfigurationList = 7FF789FC2D0B3D6D003E36FD /* Build configuration list for PBXProject "Quest Reminders" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FF789F82D0B3D6D003E36FD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7FF78A022D0B3D6D003E36FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FF78A002D0B3D6D003E36FD /* Quest Reminders */,
+				7FF78A102D0B3D6E003E36FD /* Quest RemindersTests */,
+				7FF78A1A2D0B3D6E003E36FD /* Quest RemindersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FF789FF2D0B3D6D003E36FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF78A0F2D0B3D6E003E36FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF78A192D0B3D6E003E36FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FF789FD2D0B3D6D003E36FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF78A0D2D0B3D6E003E36FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF78A172D0B3D6E003E36FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FF78A132D0B3D6E003E36FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FF78A002D0B3D6D003E36FD /* Quest Reminders */;
+			targetProxy = 7FF78A122D0B3D6E003E36FD /* PBXContainerItemProxy */;
+		};
+		7FF78A1D2D0B3D6E003E36FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FF78A002D0B3D6D003E36FD /* Quest Reminders */;
+			targetProxy = 7FF78A1C2D0B3D6E003E36FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7FF78A232D0B3D6E003E36FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7FF78A242D0B3D6E003E36FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FF78A262D0B3D6E003E36FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Quest Reminders/Preview Content\"";
+				DEVELOPMENT_TEAM = TR2LATZ6P4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Quest-Reminders";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FF78A272D0B3D6E003E36FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Quest Reminders/Preview Content\"";
+				DEVELOPMENT_TEAM = TR2LATZ6P4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Quest-Reminders";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7FF78A292D0B3D6E003E36FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2LATZ6P4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Quest-RemindersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quest Reminders.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Quest Reminders";
+			};
+			name = Debug;
+		};
+		7FF78A2A2D0B3D6E003E36FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2LATZ6P4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Quest-RemindersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quest Reminders.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Quest Reminders";
+			};
+			name = Release;
+		};
+		7FF78A2C2D0B3D6E003E36FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2LATZ6P4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Quest-RemindersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quest Reminders";
+			};
+			name = Debug;
+		};
+		7FF78A2D2D0B3D6E003E36FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2LATZ6P4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Quest-RemindersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Quest Reminders";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FF789FC2D0B3D6D003E36FD /* Build configuration list for PBXProject "Quest Reminders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF78A232D0B3D6E003E36FD /* Debug */,
+				7FF78A242D0B3D6E003E36FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF78A252D0B3D6E003E36FD /* Build configuration list for PBXNativeTarget "Quest Reminders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF78A262D0B3D6E003E36FD /* Debug */,
+				7FF78A272D0B3D6E003E36FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF78A282D0B3D6E003E36FD /* Build configuration list for PBXNativeTarget "Quest RemindersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF78A292D0B3D6E003E36FD /* Debug */,
+				7FF78A2A2D0B3D6E003E36FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF78A2B2D0B3D6E003E36FD /* Build configuration list for PBXNativeTarget "Quest RemindersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF78A2C2D0B3D6E003E36FD /* Debug */,
+				7FF78A2D2D0B3D6E003E36FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FF789F92D0B3D6D003E36FD /* Project object */;
+}
