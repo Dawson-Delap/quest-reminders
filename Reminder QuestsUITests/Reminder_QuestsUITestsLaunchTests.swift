@@ -1,13 +1,13 @@
 //
-//  Quest_RemindersUITestsLaunchTests.swift
-//  Quest RemindersUITests
+//  Reminder_QuestsUITestsLaunchTests.swift
+//  Reminder QuestsUITests
 //
-//  Created by Dawson Delap on 12/12/24.
+//  Created by Dawson Delap on 1/6/25.
 //
 
 import XCTest
 
-final class Quest_RemindersUITestsLaunchTests: XCTestCase {
+final class Reminder_QuestsUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

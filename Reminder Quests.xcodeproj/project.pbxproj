@@ -7,62 +7,62 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		7FF78A122D0B3D6E003E36FD /* PBXContainerItemProxy */ = {
+		7FC471342D2CBBC7004DB305 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7FF789F92D0B3D6D003E36FD /* Project object */;
+			containerPortal = 7FC4711B2D2CBBC6004DB305 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7FF78A002D0B3D6D003E36FD;
-			remoteInfo = "Quest Reminders";
+			remoteGlobalIDString = 7FC471222D2CBBC6004DB305;
+			remoteInfo = "Reminder Quests";
 		};
-		7FF78A1C2D0B3D6E003E36FD /* PBXContainerItemProxy */ = {
+		7FC4713E2D2CBBC7004DB305 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7FF789F92D0B3D6D003E36FD /* Project object */;
+			containerPortal = 7FC4711B2D2CBBC6004DB305 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7FF78A002D0B3D6D003E36FD;
-			remoteInfo = "Quest Reminders";
+			remoteGlobalIDString = 7FC471222D2CBBC6004DB305;
+			remoteInfo = "Reminder Quests";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7FF78A012D0B3D6D003E36FD /* Quest Reminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quest Reminders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FF78A112D0B3D6E003E36FD /* Quest RemindersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quest RemindersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FF78A1B2D0B3D6E003E36FD /* Quest RemindersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quest RemindersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FC471232D2CBBC6004DB305 /* Reminder Quests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reminder Quests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FC471332D2CBBC7004DB305 /* Reminder QuestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reminder QuestsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FC4713D2D2CBBC7004DB305 /* Reminder QuestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reminder QuestsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		7FF78A032D0B3D6D003E36FD /* Quest Reminders */ = {
+		7FC471252D2CBBC6004DB305 /* Reminder Quests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Quest Reminders";
+			path = "Reminder Quests";
 			sourceTree = "<group>";
 		};
-		7FF78A142D0B3D6E003E36FD /* Quest RemindersTests */ = {
+		7FC471362D2CBBC7004DB305 /* Reminder QuestsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Quest RemindersTests";
+			path = "Reminder QuestsTests";
 			sourceTree = "<group>";
 		};
-		7FF78A1E2D0B3D6E003E36FD /* Quest RemindersUITests */ = {
+		7FC471402D2CBBC7004DB305 /* Reminder QuestsUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Quest RemindersUITests";
+			path = "Reminder QuestsUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7FF789FE2D0B3D6D003E36FD /* Frameworks */ = {
+		7FC471202D2CBBC6004DB305 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FF78A0E2D0B3D6E003E36FD /* Frameworks */ = {
+		7FC471302D2CBBC7004DB305 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FF78A182D0B3D6E003E36FD /* Frameworks */ = {
+		7FC4713A2D2CBBC7004DB305 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,22 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7FF789F82D0B3D6D003E36FD = {
+		7FC4711A2D2CBBC6004DB305 = {
 			isa = PBXGroup;
 			children = (
-				7FF78A032D0B3D6D003E36FD /* Quest Reminders */,
-				7FF78A142D0B3D6E003E36FD /* Quest RemindersTests */,
-				7FF78A1E2D0B3D6E003E36FD /* Quest RemindersUITests */,
-				7FF78A022D0B3D6D003E36FD /* Products */,
+				7FC471252D2CBBC6004DB305 /* Reminder Quests */,
+				7FC471362D2CBBC7004DB305 /* Reminder QuestsTests */,
+				7FC471402D2CBBC7004DB305 /* Reminder QuestsUITests */,
+				7FC471242D2CBBC6004DB305 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7FF78A022D0B3D6D003E36FD /* Products */ = {
+		7FC471242D2CBBC6004DB305 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FF78A012D0B3D6D003E36FD /* Quest Reminders.app */,
-				7FF78A112D0B3D6E003E36FD /* Quest RemindersTests.xctest */,
-				7FF78A1B2D0B3D6E003E36FD /* Quest RemindersUITests.xctest */,
+				7FC471232D2CBBC6004DB305 /* Reminder Quests.app */,
+				7FC471332D2CBBC7004DB305 /* Reminder QuestsTests.xctest */,
+				7FC4713D2D2CBBC7004DB305 /* Reminder QuestsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,134 +95,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7FF78A002D0B3D6D003E36FD /* Quest Reminders */ = {
+		7FC471222D2CBBC6004DB305 /* Reminder Quests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FF78A252D0B3D6E003E36FD /* Build configuration list for PBXNativeTarget "Quest Reminders" */;
+			buildConfigurationList = 7FC471472D2CBBC7004DB305 /* Build configuration list for PBXNativeTarget "Reminder Quests" */;
 			buildPhases = (
-				7FF789FD2D0B3D6D003E36FD /* Sources */,
-				7FF789FE2D0B3D6D003E36FD /* Frameworks */,
-				7FF789FF2D0B3D6D003E36FD /* Resources */,
+				7FC4711F2D2CBBC6004DB305 /* Sources */,
+				7FC471202D2CBBC6004DB305 /* Frameworks */,
+				7FC471212D2CBBC6004DB305 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				7FF78A032D0B3D6D003E36FD /* Quest Reminders */,
+				7FC471252D2CBBC6004DB305 /* Reminder Quests */,
 			);
-			name = "Quest Reminders";
+			name = "Reminder Quests";
 			packageProductDependencies = (
 			);
-			productName = "Quest Reminders";
-			productReference = 7FF78A012D0B3D6D003E36FD /* Quest Reminders.app */;
+			productName = "Reminder Quests";
+			productReference = 7FC471232D2CBBC6004DB305 /* Reminder Quests.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7FF78A102D0B3D6E003E36FD /* Quest RemindersTests */ = {
+		7FC471322D2CBBC7004DB305 /* Reminder QuestsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FF78A282D0B3D6E003E36FD /* Build configuration list for PBXNativeTarget "Quest RemindersTests" */;
+			buildConfigurationList = 7FC4714A2D2CBBC7004DB305 /* Build configuration list for PBXNativeTarget "Reminder QuestsTests" */;
 			buildPhases = (
-				7FF78A0D2D0B3D6E003E36FD /* Sources */,
-				7FF78A0E2D0B3D6E003E36FD /* Frameworks */,
-				7FF78A0F2D0B3D6E003E36FD /* Resources */,
+				7FC4712F2D2CBBC7004DB305 /* Sources */,
+				7FC471302D2CBBC7004DB305 /* Frameworks */,
+				7FC471312D2CBBC7004DB305 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7FF78A132D0B3D6E003E36FD /* PBXTargetDependency */,
+				7FC471352D2CBBC7004DB305 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				7FF78A142D0B3D6E003E36FD /* Quest RemindersTests */,
+				7FC471362D2CBBC7004DB305 /* Reminder QuestsTests */,
 			);
-			name = "Quest RemindersTests";
+			name = "Reminder QuestsTests";
 			packageProductDependencies = (
 			);
-			productName = "Quest RemindersTests";
-			productReference = 7FF78A112D0B3D6E003E36FD /* Quest RemindersTests.xctest */;
+			productName = "Reminder QuestsTests";
+			productReference = 7FC471332D2CBBC7004DB305 /* Reminder QuestsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7FF78A1A2D0B3D6E003E36FD /* Quest RemindersUITests */ = {
+		7FC4713C2D2CBBC7004DB305 /* Reminder QuestsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FF78A2B2D0B3D6E003E36FD /* Build configuration list for PBXNativeTarget "Quest RemindersUITests" */;
+			buildConfigurationList = 7FC4714D2D2CBBC7004DB305 /* Build configuration list for PBXNativeTarget "Reminder QuestsUITests" */;
 			buildPhases = (
-				7FF78A172D0B3D6E003E36FD /* Sources */,
-				7FF78A182D0B3D6E003E36FD /* Frameworks */,
-				7FF78A192D0B3D6E003E36FD /* Resources */,
+				7FC471392D2CBBC7004DB305 /* Sources */,
+				7FC4713A2D2CBBC7004DB305 /* Frameworks */,
+				7FC4713B2D2CBBC7004DB305 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7FF78A1D2D0B3D6E003E36FD /* PBXTargetDependency */,
+				7FC4713F2D2CBBC7004DB305 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				7FF78A1E2D0B3D6E003E36FD /* Quest RemindersUITests */,
+				7FC471402D2CBBC7004DB305 /* Reminder QuestsUITests */,
 			);
-			name = "Quest RemindersUITests";
+			name = "Reminder QuestsUITests";
 			packageProductDependencies = (
 			);
-			productName = "Quest RemindersUITests";
-			productReference = 7FF78A1B2D0B3D6E003E36FD /* Quest RemindersUITests.xctest */;
+			productName = "Reminder QuestsUITests";
+			productReference = 7FC4713D2D2CBBC7004DB305 /* Reminder QuestsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7FF789F92D0B3D6D003E36FD /* Project object */ = {
+		7FC4711B2D2CBBC6004DB305 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					7FF78A002D0B3D6D003E36FD = {
+					7FC471222D2CBBC6004DB305 = {
 						CreatedOnToolsVersion = 16.1;
 					};
-					7FF78A102D0B3D6E003E36FD = {
+					7FC471322D2CBBC7004DB305 = {
 						CreatedOnToolsVersion = 16.1;
-						TestTargetID = 7FF78A002D0B3D6D003E36FD;
+						TestTargetID = 7FC471222D2CBBC6004DB305;
 					};
-					7FF78A1A2D0B3D6E003E36FD = {
+					7FC4713C2D2CBBC7004DB305 = {
 						CreatedOnToolsVersion = 16.1;
-						TestTargetID = 7FF78A002D0B3D6D003E36FD;
+						TestTargetID = 7FC471222D2CBBC6004DB305;
 					};
 				};
 			};
-			buildConfigurationList = 7FF789FC2D0B3D6D003E36FD /* Build configuration list for PBXProject "Quest Reminders" */;
+			buildConfigurationList = 7FC4711E2D2CBBC6004DB305 /* Build configuration list for PBXProject "Reminder Quests" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 7FF789F82D0B3D6D003E36FD;
+			mainGroup = 7FC4711A2D2CBBC6004DB305;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 7FF78A022D0B3D6D003E36FD /* Products */;
+			productRefGroup = 7FC471242D2CBBC6004DB305 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7FF78A002D0B3D6D003E36FD /* Quest Reminders */,
-				7FF78A102D0B3D6E003E36FD /* Quest RemindersTests */,
-				7FF78A1A2D0B3D6E003E36FD /* Quest RemindersUITests */,
+				7FC471222D2CBBC6004DB305 /* Reminder Quests */,
+				7FC471322D2CBBC7004DB305 /* Reminder QuestsTests */,
+				7FC4713C2D2CBBC7004DB305 /* Reminder QuestsUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7FF789FF2D0B3D6D003E36FD /* Resources */ = {
+		7FC471212D2CBBC6004DB305 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FF78A0F2D0B3D6E003E36FD /* Resources */ = {
+		7FC471312D2CBBC7004DB305 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FF78A192D0B3D6E003E36FD /* Resources */ = {
+		7FC4713B2D2CBBC7004DB305 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,21 +232,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7FF789FD2D0B3D6D003E36FD /* Sources */ = {
+		7FC4711F2D2CBBC6004DB305 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FF78A0D2D0B3D6E003E36FD /* Sources */ = {
+		7FC4712F2D2CBBC7004DB305 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FF78A172D0B3D6E003E36FD /* Sources */ = {
+		7FC471392D2CBBC7004DB305 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,20 +256,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7FF78A132D0B3D6E003E36FD /* PBXTargetDependency */ = {
+		7FC471352D2CBBC7004DB305 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7FF78A002D0B3D6D003E36FD /* Quest Reminders */;
-			targetProxy = 7FF78A122D0B3D6E003E36FD /* PBXContainerItemProxy */;
+			target = 7FC471222D2CBBC6004DB305 /* Reminder Quests */;
+			targetProxy = 7FC471342D2CBBC7004DB305 /* PBXContainerItemProxy */;
 		};
-		7FF78A1D2D0B3D6E003E36FD /* PBXTargetDependency */ = {
+		7FC4713F2D2CBBC7004DB305 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7FF78A002D0B3D6D003E36FD /* Quest Reminders */;
-			targetProxy = 7FF78A1C2D0B3D6E003E36FD /* PBXContainerItemProxy */;
+			target = 7FC471222D2CBBC6004DB305 /* Reminder Quests */;
+			targetProxy = 7FC4713E2D2CBBC7004DB305 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		7FF78A232D0B3D6E003E36FD /* Debug */ = {
+		7FC471452D2CBBC7004DB305 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,7 +332,7 @@
 			};
 			name = Debug;
 		};
-		7FF78A242D0B3D6E003E36FD /* Release */ = {
+		7FC471462D2CBBC7004DB305 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -388,14 +388,14 @@
 			};
 			name = Release;
 		};
-		7FF78A262D0B3D6E003E36FD /* Debug */ = {
+		7FC471482D2CBBC7004DB305 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Quest Reminders/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Reminder Quests/Preview Content\"";
 				DEVELOPMENT_TEAM = TR2LATZ6P4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -409,7 +409,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Quest-Reminders";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Reminder-Quests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -417,14 +417,14 @@
 			};
 			name = Debug;
 		};
-		7FF78A272D0B3D6E003E36FD /* Release */ = {
+		7FC471492D2CBBC7004DB305 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Quest Reminders/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Reminder Quests/Preview Content\"";
 				DEVELOPMENT_TEAM = TR2LATZ6P4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -438,7 +438,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Quest-Reminders";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Reminder-Quests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -446,7 +446,7 @@
 			};
 			name = Release;
 		};
-		7FF78A292D0B3D6E003E36FD /* Debug */ = {
+		7FC4714B2D2CBBC7004DB305 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,16 +456,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Quest-RemindersTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Reminder-QuestsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quest Reminders.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Quest Reminders";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reminder Quests.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reminder Quests";
 			};
 			name = Debug;
 		};
-		7FF78A2A2D0B3D6E003E36FD /* Release */ = {
+		7FC4714C2D2CBBC7004DB305 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,16 +475,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Quest-RemindersTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Reminder-QuestsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quest Reminders.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Quest Reminders";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reminder Quests.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reminder Quests";
 			};
 			name = Release;
 		};
-		7FF78A2C2D0B3D6E003E36FD /* Debug */ = {
+		7FC4714E2D2CBBC7004DB305 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -492,16 +492,16 @@
 				DEVELOPMENT_TEAM = TR2LATZ6P4;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Quest-RemindersUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Reminder-QuestsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Quest Reminders";
+				TEST_TARGET_NAME = "Reminder Quests";
 			};
 			name = Debug;
 		};
-		7FF78A2D2D0B3D6E003E36FD /* Release */ = {
+		7FC4714F2D2CBBC7004DB305 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -509,55 +509,55 @@
 				DEVELOPMENT_TEAM = TR2LATZ6P4;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Quest-RemindersUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dawson.Reminder-QuestsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Quest Reminders";
+				TEST_TARGET_NAME = "Reminder Quests";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7FF789FC2D0B3D6D003E36FD /* Build configuration list for PBXProject "Quest Reminders" */ = {
+		7FC4711E2D2CBBC6004DB305 /* Build configuration list for PBXProject "Reminder Quests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7FF78A232D0B3D6E003E36FD /* Debug */,
-				7FF78A242D0B3D6E003E36FD /* Release */,
+				7FC471452D2CBBC7004DB305 /* Debug */,
+				7FC471462D2CBBC7004DB305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FF78A252D0B3D6E003E36FD /* Build configuration list for PBXNativeTarget "Quest Reminders" */ = {
+		7FC471472D2CBBC7004DB305 /* Build configuration list for PBXNativeTarget "Reminder Quests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7FF78A262D0B3D6E003E36FD /* Debug */,
-				7FF78A272D0B3D6E003E36FD /* Release */,
+				7FC471482D2CBBC7004DB305 /* Debug */,
+				7FC471492D2CBBC7004DB305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FF78A282D0B3D6E003E36FD /* Build configuration list for PBXNativeTarget "Quest RemindersTests" */ = {
+		7FC4714A2D2CBBC7004DB305 /* Build configuration list for PBXNativeTarget "Reminder QuestsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7FF78A292D0B3D6E003E36FD /* Debug */,
-				7FF78A2A2D0B3D6E003E36FD /* Release */,
+				7FC4714B2D2CBBC7004DB305 /* Debug */,
+				7FC4714C2D2CBBC7004DB305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FF78A2B2D0B3D6E003E36FD /* Build configuration list for PBXNativeTarget "Quest RemindersUITests" */ = {
+		7FC4714D2D2CBBC7004DB305 /* Build configuration list for PBXNativeTarget "Reminder QuestsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7FF78A2C2D0B3D6E003E36FD /* Debug */,
-				7FF78A2D2D0B3D6E003E36FD /* Release */,
+				7FC4714E2D2CBBC7004DB305 /* Debug */,
+				7FC4714F2D2CBBC7004DB305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7FF789F92D0B3D6D003E36FD /* Project object */;
+	rootObject = 7FC4711B2D2CBBC6004DB305 /* Project object */;
 }

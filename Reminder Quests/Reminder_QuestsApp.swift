@@ -1,14 +1,14 @@
 //
-//  Quest_RemindersApp.swift
-//  Quest Reminders
+//  Reminder_QuestsApp.swift
+//  Reminder Quests
 //
-//  Created by Dawson Delap on 12/12/24.
+//  Created by Dawson Delap on 1/6/25.
 //
 
 import SwiftUI
 
 @main
-struct Quest_RemindersApp: App {
+struct Reminder_QuestsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
