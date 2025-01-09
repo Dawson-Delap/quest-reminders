@@ -7,24 +7,27 @@
 ## Date: 12/14/24
 
 1. App idea
-    - A reminder app that gives rewards with to encourage people to get things done.
+    - A reminder app that gives rewards with to encourage people to get things done. In the format of Video Game Quests
 
 2. Target Audience
-    - people that use iphones
-    - video game players
+    - People that use iphones
+    - Video game players
+    - People unsatified with the default reminder app
 
 3. Goals and Vision
     - I want an app that rivals the default reminders app.
+    - It also is nice to use
+    - I will use it in my everyday life
 
 4. Main Features
     - Reward system for claiming quests
     - Daily and Weekly quests
-    - widget
+    - Widgets of varying sizes displaying the different quests
 
 5. Completion Requirements
-    - its done
+    - it is a pleasent experence to use the app
 
 6. Technical Requirements
-    - works on most iphones
-    - quick load times
-    - functions in the background when needed
+    - Works on iphones with up to date IOS
+    - Quick load times
+    - Functions in the background when needed

@@ -1,8 +1,19 @@
 import SwiftUI
+import WidgetKit
 import Combine
 import UserNotifications
 
 struct ContentView: View {
+    @AppStorage("text1Wid", store: UserDefaults(suiteName: "group.Dawson.Reminder-Quests"))
+    private var text1Wid: String = "Default Value"
+    @AppStorage("text2Wid", store: UserDefaults(suiteName: "group.Dawson.Reminder-Quests"))
+    private var text2Wid: String = "Default Value"
+    @AppStorage("text3Wid", store: UserDefaults(suiteName: "group.Dawson.Reminder-Quests"))
+    private var text3Wid: String = "Default Value"
+    @AppStorage("text4Wid", store: UserDefaults(suiteName: "group.Dawson.Reminder-Quests"))
+    private var text4Wid: String = "Default Value"
+    @AppStorage("text5Wid", store: UserDefaults(suiteName: "group.Dawson.Reminder-Quests"))
+    private var text5Wid: String = "Default Value"
     
     // MARK: Main variables
     @AppStorage("isHidden1") private var isHidden1Saved = true
@@ -40,10 +51,13 @@ struct ContentView: View {
         }
     }
     
-    @AppStorage("text1") private var text1Saved = ""
+    @AppStorage("text1", store: UserDefaults(suiteName: "group.Dawson.Reminder-Quests")) private var text1Saved = ""
     @State public var text1 = "" {
         didSet {
             text1Saved = text1
+            text1Wid = text1
+            saveToAppGroup()
+            WidgetCenter.shared.reloadAllTimelines()
         }
     }
     
@@ -51,6 +65,8 @@ struct ContentView: View {
     @State public var text2 = "" {
         didSet {
             text2Saved = text2
+            saveToAppGroup()
+            WidgetCenter.shared.reloadAllTimelines()
         }
     }
     
@@ -58,6 +74,8 @@ struct ContentView: View {
     @State public var text3 = "" {
         didSet {
             text3Saved = text3
+            saveToAppGroup()
+            WidgetCenter.shared.reloadAllTimelines()
         }
     }
     
@@ -65,6 +83,8 @@ struct ContentView: View {
     @State public var text4 = "" {
         didSet {
             text4Saved = text4
+            saveToAppGroup()
+            WidgetCenter.shared.reloadAllTimelines()
         }
     }
     
@@ -72,6 +92,8 @@ struct ContentView: View {
     @State public var text5 = "" {
         didSet {
             text5Saved = text5
+            saveToAppGroup()
+            WidgetCenter.shared.reloadAllTimelines()
         }
     }
     
@@ -243,6 +265,18 @@ struct ContentView: View {
             DayResult5Saved = DayResult5
         }
     }
+    
+    //MARK: SAVE TO APP GROUP
+private func saveToAppGroup() {
+        let defaults = UserDefaults(suiteName: "group.Dawson.Reminder-Quests")
+        defaults?.set(text1, forKey: "text1Wid")
+        defaults?.set(text2, forKey: "text2Wid")
+        defaults?.set(text3, forKey: "text3Wid")
+        defaults?.set(text4, forKey: "text4Wid")
+        defaults?.set(text5, forKey: "text5Wid")
+        print("Saved to App Group: \(text1)") // Debugging
+    }
+    
     // MARK: Content Body
     var body: some View {
         NavigationStack {
@@ -703,11 +737,15 @@ struct ContentView: View {
             started = startedSaved
             Wgain = WgainSaved
             Wprice = WpriceSaved
+            saveToAppGroup()
+            WidgetCenter.shared.reloadAllTimelines()
             currentDate = Date(timeIntervalSince1970: savedDate)
             setupNavigationBarAppearance()
             startTimer()
         }
         .onDisappear{
+            saveToAppGroup()
+            WidgetCenter.shared.reloadAllTimelines()
             isHidden1Saved = isHidden1
             isHidden2Saved = isHidden2
             isHidden3Saved = isHidden3
@@ -731,26 +769,10 @@ struct ContentView: View {
             startedSaved = started
         }
     }
-    //MARK: Notification func
-    func sendNotification() {
-            let content = UNMutableNotificationContent()
-            content.title = "Yippie"
-            content.body = "Daily Quests are Ready to Be Claimed!"
-            content.sound = .default
-
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: false)
-
-            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-
-            UNUserNotificationCenter.current().add(request) { error in
-                if let error = error {
-                    print("Error scheduling notification: \(error)")
-                }
-            }
-        }
     // MARK: daily timer
     func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
+            
             if (dis1 || dis2 || dis3 || dis4 || dis5) {
                 result = isOneMinuteAfter(startTime: currentDate)
             }
@@ -896,7 +918,6 @@ func isOneDayAfter5(startTime: Date) -> Bool {
     // In case date calculation fails, return false
     return false
 }
-    
 
 
 private func setupNavigationBarAppearance() {
@@ -960,6 +981,8 @@ struct AddDaily: View {
     //MARK: Send Daily noti function
     @State var dailyNotificationIdentifier = "dailyQuestNotification"
 
+    
+    
     func sendDailyNotification() {
         dailyNotiStart = true
         dailyNotificationIdentifier = "dailyQuestNotification" // Use a fixed identifier
@@ -1027,6 +1050,16 @@ struct AddDaily: View {
         // In case date calculation fails, return false
         return false
     }
+    //MARK: SAVE TO APP GROUP
+private func saveToAppGroup() {
+        let defaults = UserDefaults(suiteName: "group.Dawson.Reminder-Quests")
+        defaults?.set(text1, forKey: "text1Wid")
+        defaults?.set(text2, forKey: "text2Wid")
+        defaults?.set(text3, forKey: "text3Wid")
+        defaults?.set(text4, forKey: "text4Wid")
+        defaults?.set(text5, forKey: "text5Wid")
+        print("Saved to App Group: \(text1)") // Debugging
+    }
     
     var body: some View {
         ZStack {
@@ -1049,6 +1082,8 @@ struct AddDaily: View {
                         isRepeat: $repeat1,
                         action: { dis1 = true;
                             isHidden1 = false
+                            saveToAppGroup()
+                            WidgetCenter.shared.reloadAllTimelines()
                             if dailyNotiStart{
                                 cancelDailyNotification()
                                 sendDailyNotification()
@@ -1082,6 +1117,8 @@ struct AddDaily: View {
                         isRepeat: $repeat2,
                         action: { dis2 = true;
                             isHidden2 = false
+                            saveToAppGroup()
+                            WidgetCenter.shared.reloadAllTimelines()
                             if dailyNotiStart{
                                 cancelDailyNotification()
                                 sendDailyNotification()
@@ -1113,6 +1150,8 @@ struct AddDaily: View {
                         isRepeat: $repeat3,
                         action: { dis3 = true;
                             isHidden3 = false
+                            saveToAppGroup()
+                            WidgetCenter.shared.reloadAllTimelines()
                             if dailyNotiStart{
                                 cancelDailyNotification()
                                 sendDailyNotification()
@@ -1141,6 +1180,8 @@ struct AddDaily: View {
                         isRepeat: $repeat4,
                         action: { dis4 = true;
                             isHidden4 = false
+                            saveToAppGroup()
+                            WidgetCenter.shared.reloadAllTimelines()
                             if dailyNotiStart{
                                 cancelDailyNotification()
                                 sendDailyNotification()
@@ -1166,6 +1207,8 @@ struct AddDaily: View {
                         isRepeat: $repeat5,
                         action: { dis5 = true;
                             isHidden5 = false
+                            saveToAppGroup()
+                            WidgetCenter.shared.reloadAllTimelines()
                             if dailyNotiStart{
                                 cancelDailyNotification()
                                 sendDailyNotification()
@@ -1474,11 +1517,49 @@ struct Weekly: View {
                 VStack {
                     VStack{
                         HStack{
-                            Text(Wtext1)
-                                .frame(minWidth: 300, minHeight: 100)
-                                .background(Color(white: 0.2))
-                                .cornerRadius(10)
-                                .font(.title)
+                            NavigationLink(destination: AddWeekly(
+                                isHidden1: $WisHidden1,
+                                isHidden2: $WisHidden2,
+                                isHidden3: $WisHidden3,
+                                WisHidden1Saved: $WisHidden1Saved,
+                                WisHidden2Saved: $WisHidden2Saved,
+                                WisHidden3Saved: $WisHidden3Saved,
+                                text1: $Wtext1,
+                                text2: $Wtext2,
+                                text3: $Wtext3,
+                                Wtext1Saved: $Wtext1Saved,
+                                Wtext2Saved: $Wtext2Saved,
+                                Wtext3Saved: $Wtext3Saved,
+                                dis1: $Wdis1,
+                                dis2: $Wdis2,
+                                dis3: $Wdis3,
+                                Wdis1Saved: $Wdis1Saved,
+                                Wdis2Saved: $Wdis2Saved,
+                                Wdis3Saved: $Wdis3Saved,
+                                minutes: $Wminutes,
+                                seconds: $Wseconds,
+                                started: $Wstarted,
+                                WminutesSaved: $WminutesSaved,
+                                WsecondsSaved: $WsecondsSaved,
+                                WstartedSaved: $WstartedSaved,
+                                result: $Wresult,
+                                count: $Wcount,
+                                timer: $Wtimer,
+                                WresultSaved: $WresultSaved,
+                                WcountSaved: $WcountSaved,
+                                currentDate: $WcurrentDate,
+                                WsavedDate: $WsavedDate
+                            )) {
+                                Text(Wtext1)
+                                    .frame(minWidth: 300, minHeight: 100)
+                                    .background(Color(white: 0.2))
+                                    .cornerRadius(10)
+                                    .font(.title)
+                            }.simultaneousGesture(
+                                TapGesture().onEnded {
+                                    WDcount = 1
+                                }
+                            )
                         }
                         HStack{
                             Button(action: {
@@ -1501,11 +1582,49 @@ struct Weekly: View {
                     
                     VStack{
                         HStack{
-                            Text(Wtext2)
-                                .frame(minWidth: 300, minHeight: 100)
-                                .background(Color(white: 0.2))
-                                .cornerRadius(10)
-                                .font(.largeTitle)
+                            NavigationLink(destination: AddWeekly(
+                                isHidden1: $WisHidden1,
+                                isHidden2: $WisHidden2,
+                                isHidden3: $WisHidden3,
+                                WisHidden1Saved: $WisHidden1Saved,
+                                WisHidden2Saved: $WisHidden2Saved,
+                                WisHidden3Saved: $WisHidden3Saved,
+                                text1: $Wtext1,
+                                text2: $Wtext2,
+                                text3: $Wtext3,
+                                Wtext1Saved: $Wtext1Saved,
+                                Wtext2Saved: $Wtext2Saved,
+                                Wtext3Saved: $Wtext3Saved,
+                                dis1: $Wdis1,
+                                dis2: $Wdis2,
+                                dis3: $Wdis3,
+                                Wdis1Saved: $Wdis1Saved,
+                                Wdis2Saved: $Wdis2Saved,
+                                Wdis3Saved: $Wdis3Saved,
+                                minutes: $Wminutes,
+                                seconds: $Wseconds,
+                                started: $Wstarted,
+                                WminutesSaved: $WminutesSaved,
+                                WsecondsSaved: $WsecondsSaved,
+                                WstartedSaved: $WstartedSaved,
+                                result: $Wresult,
+                                count: $Wcount,
+                                timer: $Wtimer,
+                                WresultSaved: $WresultSaved,
+                                WcountSaved: $WcountSaved,
+                                currentDate: $WcurrentDate,
+                                WsavedDate: $WsavedDate
+                            )) {
+                                Text(Wtext2)
+                                    .frame(minWidth: 300, minHeight: 100)
+                                    .background(Color(white: 0.2))
+                                    .cornerRadius(10)
+                                    .font(.title)
+                            }.simultaneousGesture(
+                                TapGesture().onEnded {
+                                    WDcount = 2
+                                }
+                            )
                         }
                         HStack{
                             Button(action: {
@@ -1528,11 +1647,49 @@ struct Weekly: View {
                     
                     VStack{
                         HStack{
-                            Text(Wtext3)
-                                .frame(minWidth: 300, minHeight: 100)
-                                .background(Color(white: 0.2))
-                                .cornerRadius(10)
-                                .font(.title)
+                            NavigationLink(destination: AddWeekly(
+                                isHidden1: $WisHidden1,
+                                isHidden2: $WisHidden2,
+                                isHidden3: $WisHidden3,
+                                WisHidden1Saved: $WisHidden1Saved,
+                                WisHidden2Saved: $WisHidden2Saved,
+                                WisHidden3Saved: $WisHidden3Saved,
+                                text1: $Wtext1,
+                                text2: $Wtext2,
+                                text3: $Wtext3,
+                                Wtext1Saved: $Wtext1Saved,
+                                Wtext2Saved: $Wtext2Saved,
+                                Wtext3Saved: $Wtext3Saved,
+                                dis1: $Wdis1,
+                                dis2: $Wdis2,
+                                dis3: $Wdis3,
+                                Wdis1Saved: $Wdis1Saved,
+                                Wdis2Saved: $Wdis2Saved,
+                                Wdis3Saved: $Wdis3Saved,
+                                minutes: $Wminutes,
+                                seconds: $Wseconds,
+                                started: $Wstarted,
+                                WminutesSaved: $WminutesSaved,
+                                WsecondsSaved: $WsecondsSaved,
+                                WstartedSaved: $WstartedSaved,
+                                result: $Wresult,
+                                count: $Wcount,
+                                timer: $Wtimer,
+                                WresultSaved: $WresultSaved,
+                                WcountSaved: $WcountSaved,
+                                currentDate: $WcurrentDate,
+                                WsavedDate: $WsavedDate
+                            )) {
+                                Text(Wtext3)
+                                    .frame(minWidth: 300, minHeight: 100)
+                                    .background(Color(white: 0.2))
+                                    .cornerRadius(10)
+                                    .font(.title)
+                            }.simultaneousGesture(
+                                TapGesture().onEnded {
+                                    WDcount = 3
+                                }
+                            )
                         }
                         HStack{
                             Button(action: {
@@ -1553,7 +1710,7 @@ struct Weekly: View {
                         .padding()
                         .opacity(WisHidden3 ? 0 : 1)
                     Spacer()
-                }.padding(.top,80)
+                }.padding(.top,90)
             
                 VStack {
                     Rectangle()
@@ -1752,6 +1909,44 @@ struct AddWeekly: View {
     
     @Binding var currentDate: Date
     @Binding var WsavedDate: Double
+    
+    //MARK: Weekly Notification
+    @AppStorage("weeklyNotiStart") private var weeklyNotiStartSaved = false
+    @State public var weeklyNotiStart = false {
+        didSet {
+            weeklyNotiStartSaved = weeklyNotiStart
+        }
+    }
+    
+    @State var weeklyNotificationIdentifier = "weeklyQuestNotification"
+
+    func sendWeeklyNotification() {
+        weeklyNotiStart = true
+        weeklyNotificationIdentifier = "weeklyQuestNotification" // Use a fixed identifier
+
+        let content = UNMutableNotificationContent()
+        content.title = "Horray!"
+        content.body = "Weekly Quests are Ready to Be Claimed!"
+        content.sound = .default
+
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3600, repeats: false)
+
+        let request = UNNotificationRequest(identifier: weeklyNotificationIdentifier, content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Error scheduling notification: \(error)")
+            } else {
+                weeklyNotiStart = false
+                print("Notification scheduled with identifier: \(weeklyNotificationIdentifier)")
+            }
+        }
+    }
+
+    func cancelWeeklyNotification() {
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [weeklyNotificationIdentifier])
+        print("Notification with identifier \(weeklyNotificationIdentifier) canceled.")
+    }
     // MARK: Weekly timer 2
     func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
@@ -1803,10 +1998,10 @@ struct AddWeekly: View {
             
             VStack {
                 // MARK: text for add challenges
-                switch Dcount {
+                switch WDcount {
                 case 1:
                     challengeView(
-                        placeholder: "Name of challenge 3",
+                        placeholder: "Name of challenge 1",
                         text: $text1,
                         isHidden: $isHidden1,
                         action: { dis1 = true;
@@ -1814,11 +2009,18 @@ struct AddWeekly: View {
                             isHidden1 = false
                             WisHidden1Saved = false
                             Wtext1Saved = text1
+                            
+                            if weeklyNotiStart{
+                                cancelWeeklyNotification()
+                                sendWeeklyNotification()
+                            }else{
+                                sendWeeklyNotification()
+                            }
                             if isHidden2 {
-                                Dcount += 1
+                                WDcount += 1
                             }
                             if !isHidden2 && isHidden3 {
-                                Dcount += 2
+                                WDcount += 2
                             }
                             if started == false {
                                 currentDate = Date()
@@ -1829,18 +2031,24 @@ struct AddWeekly: View {
                     )
                 case 2:
                     challengeView(
-                        placeholder: "Name of challenge 3",
+                        placeholder: "Name of challenge 2",
                         text: $text2,
                         isHidden: $isHidden2,
                         action: { dis2 = true;
                             Wdis2Saved = true
                             isHidden2 = false
                             WisHidden2Saved = false
-                            Wtext3Saved = text3
+                            Wtext2Saved = text2
+                            if weeklyNotiStart{
+                                cancelWeeklyNotification()
+                                sendWeeklyNotification()
+                            }else{
+                                sendWeeklyNotification()
+                            }
                             if isHidden3 {
-                                Dcount += 1
+                                WDcount += 1
                             }else if isHidden1 {
-                                Dcount -= 1
+                                WDcount -= 1
                             }
                             if started == false {
                                 currentDate = Date()
@@ -1858,10 +2066,16 @@ struct AddWeekly: View {
                             isHidden3 = false
                             WisHidden3Saved = false
                             Wtext3Saved = text3
+                            if weeklyNotiStart{
+                                cancelWeeklyNotification()
+                                sendWeeklyNotification()
+                            }else{
+                                sendWeeklyNotification()
+                            }
                             if isHidden2 {
-                                Dcount -= 1
+                                WDcount -= 1
                             }else if isHidden1 && !isHidden2{
-                                Dcount -= 2
+                                WDcount -= 2
                             }
                             if started == false {
                                 currentDate = Date()
