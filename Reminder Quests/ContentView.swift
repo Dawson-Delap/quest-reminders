@@ -14,6 +14,8 @@ struct ContentView: View {
     private var text4Wid: String = "Default Value"
     @AppStorage("text5Wid", store: UserDefaults(suiteName: "group.Dawson.Reminder-Quests"))
     private var text5Wid: String = "Default Value"
+    @AppStorage("scoreWid", store: UserDefaults(suiteName: "group.Dawson.Reminder-Quests"))
+    private var scoreWid: Int = 0
     
     // MARK: Main variables
     @AppStorage("isHidden1") private var isHidden1Saved = true
@@ -274,6 +276,7 @@ private func saveToAppGroup() {
         defaults?.set(text3, forKey: "text3Wid")
         defaults?.set(text4, forKey: "text4Wid")
         defaults?.set(text5, forKey: "text5Wid")
+        defaults?.set(score, forKey: "scoreWid")
         print("Saved to App Group: \(text1)") // Debugging
     }
     
@@ -1399,6 +1402,9 @@ struct Weekly: View {
     @State public var Wtext1 = "" {
         didSet {
             Wtext1Saved = Wtext1
+            WsaveToAppGroup()
+            WidgetCenter.shared.reloadAllTimelines()
+            
         }
     }
     
@@ -1406,6 +1412,8 @@ struct Weekly: View {
     @State public var Wtext2 = "" {
         didSet {
             Wtext2Saved = Wtext2
+            WsaveToAppGroup()
+            WidgetCenter.shared.reloadAllTimelines()
         }
     }
     
@@ -1413,6 +1421,8 @@ struct Weekly: View {
     @State public var Wtext3 = "" {
         didSet {
             Wtext3Saved = Wtext3
+            WsaveToAppGroup()
+            WidgetCenter.shared.reloadAllTimelines()
         }
     }
     
@@ -1481,6 +1491,12 @@ struct Weekly: View {
             WcountSaved = Wcount
         }
     }
+    @AppStorage("Wtext1Wid", store: UserDefaults(suiteName: "group.Dawson.Reminder-Quests"))
+    private var Wtext1Wid: String = "Default Value"
+    @AppStorage("Wtext2Wid", store: UserDefaults(suiteName: "group.Dawson.Reminder-Quests"))
+    private var Wtext2Wid: String = "Default Value"
+    @AppStorage("Wtext3Wid", store: UserDefaults(suiteName: "group.Dawson.Reminder-Quests"))
+    private var Wtext3Wid: String = "Default Value"
     //MARK: Weekly binding var
     @Binding var isHidden1: Bool
     @Binding var isHidden2: Bool
@@ -1502,6 +1518,15 @@ struct Weekly: View {
     @Binding var Wgain: Int
     @Binding var WgainSaved: Int
     //MARK: Weekly view body
+    private func WsaveToAppGroup() {
+            let defaults = UserDefaults(suiteName: "group.Dawson.Reminder-Quests")
+            defaults?.set(Wtext1, forKey: "Wtext1Wid")
+            defaults?.set(Wtext2, forKey: "Wtext2Wid")
+            defaults?.set(Wtext3, forKey: "Wtext3Wid")
+            defaults?.set(score, forKey: "scoreWid")
+            print("Saved to App Group: \(text1)") // Debugging
+        }
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -1910,6 +1935,14 @@ struct AddWeekly: View {
     @Binding var currentDate: Date
     @Binding var WsavedDate: Double
     
+    private func WsaveToAppGroup() {
+            let defaults = UserDefaults(suiteName: "group.Dawson.Reminder-Quests")
+            defaults?.set(text1, forKey: "Wtext1Wid")
+            defaults?.set(text2, forKey: "Wtext2Wid")
+            defaults?.set(text3, forKey: "Wtext3Wid")
+            print("Saved to App Group: \(text1)") // Debugging
+        }
+    
     //MARK: Weekly Notification
     @AppStorage("weeklyNotiStart") private var weeklyNotiStartSaved = false
     @State public var weeklyNotiStart = false {
@@ -2008,6 +2041,8 @@ struct AddWeekly: View {
                             Wdis1Saved = true
                             isHidden1 = false
                             WisHidden1Saved = false
+                            WsaveToAppGroup()
+                            WidgetCenter.shared.reloadAllTimelines()
                             Wtext1Saved = text1
                             
                             if weeklyNotiStart{
@@ -2039,6 +2074,8 @@ struct AddWeekly: View {
                             isHidden2 = false
                             WisHidden2Saved = false
                             Wtext2Saved = text2
+                            WsaveToAppGroup()
+                            WidgetCenter.shared.reloadAllTimelines()
                             if weeklyNotiStart{
                                 cancelWeeklyNotification()
                                 sendWeeklyNotification()
@@ -2066,6 +2103,8 @@ struct AddWeekly: View {
                             isHidden3 = false
                             WisHidden3Saved = false
                             Wtext3Saved = text3
+                            WsaveToAppGroup()
+                            WidgetCenter.shared.reloadAllTimelines()
                             if weeklyNotiStart{
                                 cancelWeeklyNotification()
                                 sendWeeklyNotification()

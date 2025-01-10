@@ -22,10 +22,11 @@
 4. Main Features
     - Reward system for claiming quests
     - Daily and Weekly quests
-    - Widgets of varying sizes displaying the different quests
+    - Widgets of varying sizes displaying the different quests and can be claimed
 
 5. Completion Requirements
-    - it is a pleasent experence to use the app
+    - It is a pleasent experence to use the app
+    - Has Widgets that are functional and easy to understand
 
 6. Technical Requirements
     - Works on iphones with up to date IOS
