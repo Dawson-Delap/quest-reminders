@@ -342,6 +342,9 @@ private func saveToAppGroup() {
                             }
                         )
                         Label("+\(gain)", systemImage: "sparkles")
+                        if repeat1 {
+                            Image(systemName: "arrow.2.circlepath")
+                        }
                         
                     }.frame(minWidth: 350, minHeight: 50).font(.headline)
                         .foregroundColor(.white)
@@ -400,6 +403,9 @@ private func saveToAppGroup() {
                             }
                         )
                         Label("+\(gain)", systemImage: "sparkles")
+                        if repeat2 {
+                            Image(systemName: "arrow.2.circlepath")
+                        }
                         
                     }.frame(minWidth: 350, minHeight: 50).font(.headline)
                         .foregroundColor(.white)
@@ -457,6 +463,9 @@ private func saveToAppGroup() {
                             }
                         )
                         Label("+\(gain)", systemImage: "sparkles")
+                        if repeat3 {
+                            Image(systemName: "arrow.2.circlepath")
+                        }
                         
                     }.frame(minWidth: 350, minHeight: 50).font(.headline)
                         .foregroundColor(.white)
@@ -514,6 +523,9 @@ private func saveToAppGroup() {
                             }
                         )
                         Label("+\(gain)", systemImage: "sparkles")
+                        if repeat4 {
+                            Image(systemName: "arrow.2.circlepath")
+                        }
                         
                     }.frame(minWidth: 350, minHeight: 50).font(.headline)
                         .foregroundColor(.white)
@@ -574,6 +586,9 @@ private func saveToAppGroup() {
                             }
                         )
                         Label("+\(gain)", systemImage: "sparkles")
+                        if repeat5 {
+                            Image(systemName: "arrow.2.circlepath")
+                        }
                         
                     }.frame(minWidth: 350, minHeight: 50).font(.headline)
                         .foregroundColor(.white)
@@ -1398,6 +1413,25 @@ struct Weekly: View {
         }
     }
     
+    @AppStorage("WisRepeat1") private var WisRepeat1Saved = true
+    @State public var WisRepeat1 = true {
+        didSet {
+            WisRepeat1Saved = WisRepeat1
+        }
+    }
+    @AppStorage("WisRepeat2") private var WisRepeat2Saved = true
+    @State public var WisRepeat2 = true {
+        didSet {
+            WisRepeat2Saved = WisRepeat2
+        }
+    }
+    @AppStorage("WisRepeat3") private var WisRepeat3Saved = true
+    @State public var WisRepeat3 = true {
+        didSet {
+            WisRepeat3Saved = WisRepeat3
+        }
+    }
+    
     @AppStorage("Wtext1") private var Wtext1Saved = ""
     @State public var Wtext1 = "" {
         didSet {
@@ -1573,7 +1607,13 @@ struct Weekly: View {
                                 WresultSaved: $WresultSaved,
                                 WcountSaved: $WcountSaved,
                                 currentDate: $WcurrentDate,
-                                WsavedDate: $WsavedDate
+                                WsavedDate: $WsavedDate,
+                                isRepeat1: $WisRepeat1,
+                                isRepeat2: $WisRepeat2,
+                                isRepeat3: $WisRepeat3,
+                                WisRepeat1Saved: $WisRepeat1Saved,
+                                WisRepeat2Saved: $WisRepeat2Saved,
+                                WisRepeat3Saved: $WisRepeat3Saved
                             )) {
                                 Text(Wtext1)
                                     .frame(minWidth: 300, minHeight: 100)
@@ -1596,6 +1636,11 @@ struct Weekly: View {
                                     .font(.largeTitle)
                             }.disabled(Wdis1)
                             Label("+\(Wgain)", systemImage: "sparkles")
+                                .font(.title)
+                            if WisRepeat1{
+                                Image(systemName: "arrow.2.circlepath")
+                                    .font(.title)
+                            }
                         }
                     }.frame(minWidth: 350, minHeight: 140).font(.headline)
                         .foregroundColor(.white)
@@ -1638,7 +1683,13 @@ struct Weekly: View {
                                 WresultSaved: $WresultSaved,
                                 WcountSaved: $WcountSaved,
                                 currentDate: $WcurrentDate,
-                                WsavedDate: $WsavedDate
+                                WsavedDate: $WsavedDate,
+                                isRepeat1: $WisRepeat1,
+                                isRepeat2: $WisRepeat2,
+                                isRepeat3: $WisRepeat3,
+                                WisRepeat1Saved: $WisRepeat1Saved,
+                                WisRepeat2Saved: $WisRepeat2Saved,
+                                WisRepeat3Saved: $WisRepeat3Saved
                             )) {
                                 Text(Wtext2)
                                     .frame(minWidth: 300, minHeight: 100)
@@ -1661,6 +1712,11 @@ struct Weekly: View {
                                     .font(.largeTitle)
                             }.disabled(Wdis2)
                             Label("+\(Wgain)", systemImage: "sparkles")
+                                .font(.title)
+                            if WisRepeat2{
+                                Image(systemName: "arrow.2.circlepath")
+                                    .font(.title)
+                            }
                         }
                     }.frame(minWidth: 350, minHeight: 140).font(.headline)
                         .foregroundColor(.white)
@@ -1703,7 +1759,13 @@ struct Weekly: View {
                                 WresultSaved: $WresultSaved,
                                 WcountSaved: $WcountSaved,
                                 currentDate: $WcurrentDate,
-                                WsavedDate: $WsavedDate
+                                WsavedDate: $WsavedDate,
+                                isRepeat1: $WisRepeat1,
+                                isRepeat2: $WisRepeat2,
+                                isRepeat3: $WisRepeat3,
+                                WisRepeat1Saved: $WisRepeat1Saved,
+                                WisRepeat2Saved: $WisRepeat2Saved,
+                                WisRepeat3Saved: $WisRepeat3Saved
                             )) {
                                 Text(Wtext3)
                                     .frame(minWidth: 300, minHeight: 100)
@@ -1726,6 +1788,11 @@ struct Weekly: View {
                                     .font(.largeTitle)
                             }.disabled(Wdis3)
                             Label("+\(Wgain)", systemImage: "sparkles")
+                                .font(.title)
+                            if WisRepeat3{
+                                Image(systemName: "arrow.2.circlepath")
+                                    .font(.title)
+                            }
                         }
                     }.frame(minWidth: 350, minHeight: 140).font(.headline)
                         .foregroundColor(.white)
@@ -1811,7 +1878,13 @@ struct Weekly: View {
                             WresultSaved: $WresultSaved,
                             WcountSaved: $WcountSaved,
                             currentDate: $WcurrentDate,
-                            WsavedDate: $WsavedDate
+                            WsavedDate: $WsavedDate,
+                            isRepeat1: $WisRepeat1,
+                            isRepeat2: $WisRepeat2,
+                            isRepeat3: $WisRepeat3,
+                            WisRepeat1Saved: $WisRepeat1Saved,
+                            WisRepeat2Saved: $WisRepeat2Saved,
+                            WisRepeat3Saved: $WisRepeat3Saved
                         )) {
                             Image(systemName: "plus")
                                 .font(.headline)
@@ -1847,25 +1920,63 @@ struct Weekly: View {
             Wstarted = WstartedSaved
             WcurrentDate = Date(timeIntervalSince1970: WsavedDate)
             setupNavigationBarAppearance()
-            if (Wdis1 || Wdis2 || Wdis3) {
-                WstartTimer()
-            }
+            WstartTimer()
+        }
+    }
+    @AppStorage("weekResult1") private var weekResult1Saved = false
+    @State public var weekResult1 = false {
+        didSet {
+            weekResult1Saved = weekResult1
+        }
+    }
+    @AppStorage("weekResult2") private var weekResult2Saved = false
+    @State public var weekResult2 = false {
+        didSet {
+            weekResult2Saved = weekResult2
+        }
+    }
+    @AppStorage("weekResult3") private var weekResult3Saved = false
+    @State public var weekResult3 = false {
+        didSet {
+            weekResult3Saved = weekResult3
         }
     }
     // MARK: Weekly timer
     func WstartTimer() {
         Wtimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
-            Wresult = isOneMinuteAfter(startTime: WcurrentDate)
+            
+            if (Wdis1 || Wdis2 || Wdis3) {
+                Wresult = isOneMinuteAfter(startTime: WcurrentDate)
+            }
+            if WisRepeat1 {
+                weekResult1 = isOneWeekAfter1(startTime: WcurrentDate)
+            }
+            if WisRepeat2 {
+                weekResult2 = isOneWeekAfter2(startTime: WcurrentDate)
+            }
+            if WisRepeat3 {
+                weekResult3 = isOneWeekAfter3(startTime: WcurrentDate)
+            }
             if Wresult {
                 Wdis1 = false
                 Wdis2 = false
                 Wdis3 = false
-                WstopTimer()
+                stopTimer()
+            }
+            if weekResult1{
+                WisHidden1 = false
+            }
+            if weekResult2{
+                WisHidden2 = false
+                
+            }
+            if weekResult3{
+                WisHidden3 = false
             }
             Wcount += 1
         }
     }
-    func WstopTimer() {
+    func stopTimer() {
         // Stop the first timer if it's running
         Wtimer?.invalidate()
         Wtimer = nil
@@ -1875,21 +1986,65 @@ struct Weekly: View {
     func isOneMinuteAfter(startTime: Date) -> Bool {
         // Calculate one minute later
         if let oneMinuteLater = Calendar.current.date(byAdding: .hour, value: 1, to: startTime) {
-            let WcurrentTime = Date()
+            let currentTime = Date()
             
             // Calculate the time left
-            let timeLeft = oneMinuteLater.timeIntervalSince(WcurrentTime)
+            let timeLeft = oneMinuteLater.timeIntervalSince(currentTime)
             if timeLeft > 0 {
                 Wminutes = Int(timeLeft) / 60
                 Wseconds = Int(timeLeft) % 60
             }
             // Compare if the current time is after one minute later
-            return WcurrentTime >= oneMinuteLater
+            return currentTime >= oneMinuteLater
         }
         
         // In case date calculation fails, return false
         return false
     }
+}
+func isOneWeekAfter1(startTime: Date) -> Bool {
+    // Adjust the startTime to 00:00 (midnight) on the same date
+    let calendar = Calendar.current
+    let startOfDay = calendar.startOfDay(for: startTime)
+    
+    if let oneDayLater = calendar.date(byAdding: .day, value: 7, to: startOfDay) {
+        let currentTime = Date()
+        // Compare if the current time is after one day later
+        return currentTime >= oneDayLater
+    }
+    
+    // In case date calculation fails, return false
+    return false
+}
+func isOneWeekAfter2(startTime: Date) -> Bool {
+    // Adjust the startTime to 00:00 (midnight) on the same date
+    let calendar = Calendar.current
+    let startOfDay = calendar.startOfDay(for: startTime)
+    
+    // Calculate one day later
+    if let oneDayLater = calendar.date(byAdding: .day, value: 7, to: startOfDay) {
+        let currentTime = Date()
+        // Compare if the current time is after one day later
+        return currentTime >= oneDayLater
+    }
+    
+    // In case date calculation fails, return false
+    return false
+}
+func isOneWeekAfter3(startTime: Date) -> Bool {
+    // Adjust the startTime to 00:00 (midnight) on the same date
+    let calendar = Calendar.current
+    let startOfDay = calendar.startOfDay(for: startTime)
+    
+    // Calculate one day later
+    if let oneDayLater = calendar.date(byAdding: .day, value: 7, to: startOfDay) {
+        let currentTime = Date()
+        // Compare if the current time is after one day later
+        return currentTime >= oneDayLater
+    }
+    
+    // In case date calculation fails, return false
+    return false
 }
 //MARK: Add Weekly view
 struct AddWeekly: View {
@@ -1934,6 +2089,13 @@ struct AddWeekly: View {
     
     @Binding var currentDate: Date
     @Binding var WsavedDate: Double
+    
+    @Binding var isRepeat1: Bool
+    @Binding var isRepeat2: Bool
+    @Binding var isRepeat3: Bool
+    @Binding var WisRepeat1Saved: Bool
+    @Binding var WisRepeat2Saved: Bool
+    @Binding var WisRepeat3Saved: Bool
     
     private func WsaveToAppGroup() {
             let defaults = UserDefaults(suiteName: "group.Dawson.Reminder-Quests")
@@ -2037,6 +2199,7 @@ struct AddWeekly: View {
                         placeholder: "Name of challenge 1",
                         text: $text1,
                         isHidden: $isHidden1,
+                        isRepeat: $isRepeat1,
                         action: { dis1 = true;
                             Wdis1Saved = true
                             isHidden1 = false
@@ -2069,6 +2232,7 @@ struct AddWeekly: View {
                         placeholder: "Name of challenge 2",
                         text: $text2,
                         isHidden: $isHidden2,
+                        isRepeat: $isRepeat2,
                         action: { dis2 = true;
                             Wdis2Saved = true
                             isHidden2 = false
@@ -2098,6 +2262,7 @@ struct AddWeekly: View {
                         placeholder: "Name of challenge 3",
                         text: $text3,
                         isHidden: $isHidden3,
+                        isRepeat: $isRepeat3,
                         action: { dis3 = true;
                             Wdis3Saved = true
                             isHidden3 = false
@@ -2147,40 +2312,44 @@ struct AddWeekly: View {
         placeholder: String,
         text: Binding<String>,
         isHidden: Binding<Bool>,
+        isRepeat: Binding<Bool>,
         action: @escaping () -> Void
     ) -> some View {
         VStack {
             TextField(placeholder, text: text)
                 .frame(minHeight: 100)
-                .foregroundStyle(Color.white)
+                .foregroundColor(.white)
                 .background(Color(white: 0.2))
                 .font(.largeTitle)
                 .cornerRadius(10)
                 .padding()
-            HStack{
+
+            HStack {
+                // Custom layout for Toggle
+                HStack{ // Adjust spacing here
+                    Toggle("", isOn: isRepeat)
+                        .labelsHidden()
+                        .toggleStyle(SwitchToggleStyle(tint: .blue))
+                    Text("Repeat Weekly")
+                        .foregroundColor(.white)
+                        .padding(20)
+                        
+                }
+                .padding(.leading, 10) // Optional: Add padding for alignment
+                .background(Color(white: 0.3))
+                .cornerRadius(10)
                 Button(action: {
                     isHidden.wrappedValue = false
-                    WisHidden1Saved = false
                     action()
                 }) {
                     Image(systemName: "checkmark.seal")
                         .font(.largeTitle)
-                        .foregroundStyle(Color.white)
+                        .foregroundColor(.white)
                         .padding(10)
-                }
-                //MARK: On Disappear
-            }.background(Color(white: 0.3))
-                .cornerRadius(10)
-        }.onDisappear{
-            WisHidden1Saved = isHidden1
-            WisHidden2Saved = isHidden2
-            WisHidden3Saved = isHidden3
-            Wdis1Saved = dis1
-            Wdis2Saved = dis2
-            Wdis3Saved = dis3
-            WminutesSaved = minutes
-            WsecondsSaved = seconds
-            WstartedSaved = started
+                }.background(Color(white: 0.3))
+                    .cornerRadius(10)
+                    
+            }
         }
     }
 }
